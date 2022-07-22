@@ -1,0 +1,156 @@
+* {
+    white-space: nowrap;
+}
+
+body {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 100vh;
+    min-width:  1400px;
+    padding: 10px;
+    padding-bottom: 70px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0743689f;
+}
+
+.heading {
+    padding: 0 10px;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 5px;
+}
+
+.button {
+    padding: 5px;
+    background-color: #F0FDEE;
+    border: 1px solid black;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #C0EFBA;
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+.button-active {
+    background-color: #C0EFBA;
+}
+
+#symbols col, #symbols tr, #symbols td {
+    transition: background-color 1s ease;
+}
+
+
+/* elements */
+.earth {
+    background-color: #73f673;
+}
+
+.water {
+    background-color: #7070f6
+}
+
+.air {
+    background-color: #eaecff;
+}
+
+.fire {
+    background-color: #ff6c6c;
+}
+
+.earth.water,
+.air.fire {
+    background-color: #fbc5c5;
+}
+
+.fire.water,
+.air.earth {
+    background-color: #bbffbd;
+}
+
+.fire.earth,
+.air.water {
+    background-color: #b4d3ff;
+}
+
+.patri,
+td.fire,
+td.water,
+td.air,
+td.earth {
+    background-color: rgb(255, 255, 146);
+    background-color: #f871ff;
+
+}
+
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    /* opacity: 0; */
+    transition: opacity 1s ease;
+}
+
+.info-wrapper span {
+    /* padding: 5px; */
+    line-height: 20px;
+}
+
+.info-wrapper {
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 10px;
+}
+
+.info-block-header {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.info-block:nth-child(1) {
+    margin-bottom: 7px;
+}
+
+.footer {
+    position: absolute;
+    /* height: 50px; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: 0;
+
+    text-align: center;
+    line-height: 50px;
+
+    background-color: #c1c1c1;
+}
